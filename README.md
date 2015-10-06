@@ -1,8 +1,6 @@
 # MyFirstAngularJS
-My First AngularJS
 
 To run, just do:
-
 <ul>
   <li>git clone https://github.com/andreformento/MyFirstAngularJS.git</li>
   <li>cd MyFirstAngularJS</li>
