@@ -38,9 +38,16 @@
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+                <li class="active"><a href="#/">Home</a></li>
+                <li><a ng-href="#/about">About</a></li>
+                <li><a ng-href="#/">Contact</a></li>
+                <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastro <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#/aerospace-manufacturer/list">Fábrica de aeronave</a></li>
+                    <li><a href="#/airplane/list">Aeronave</a></li>
+                  </ul>
+                </li>
             </ul>
           </div>
         </div>
@@ -81,17 +88,18 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         
         <!-- Modules -->
-        <script src="scripts/app.js"></script>
+        <script src="components/app.module.js"></script>
+        
+        <!-- Routes -->
+        <script src="components/app.routes.js"></script>
       
-        <!-- Controllers -->
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/HomeController.js"></script>
-        <script src="scripts/controllers/PhotoController.js"></script>
-      
-        <!-- Services -->
-        <script src="scripts/services/photos.js"></script>
-      
+        <!-- components -->
+        <script src="components/about/about.js"></script>
+        <script src="components/home/HomeController.js"></script>
+        <script src="components/photo/PhotoController.js"></script>
+        <script src="components/photo/photos.js"></script>
+        <script src="components/aerospace-manufacturer/controller.js"></script>
+        <script src="components/aerospace-manufacturer/service.js"></script>
         <!-- endbuild -->
 </body>
 </html>
