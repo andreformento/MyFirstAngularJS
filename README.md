@@ -1,4 +1,11 @@
 # MyFirstAngularJS
-My First AngularJS
 
-To run, go to the directory project and execute the command ''grunt serve''
+To run, just do:
+<ul>
+  <li>git clone https://github.com/andreformento/MyFirstAngularJS.git</li>
+  <li>cd MyFirstAngularJS</li>
+  <li>npm install</li>
+  <li>npm install -g bower</li>
+  <li>bower install</li>
+  <li>grunt serve</li>
+</ul>
